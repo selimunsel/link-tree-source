@@ -39,6 +39,7 @@ link-tree/
 │   ├── bg-vid.mp4          # Looping background video (Git LFS)
 │   ├── video-poster.jpg    # Video fallback poster & OG image
 │   └── favicon/            # Full favicon set + web manifest
+├── LICENSE
 ├── .gitignore
 ├── .gitattributes          # LF normalization + Git LFS rules
 └── README.md
@@ -55,7 +56,7 @@ No build tools or servers required — just open `index.html` in your browser.
 > **Note:** `bg-vid.mp4` is tracked via Git LFS. Make sure to install Git LFS before cloning:
 > ```bash
 > git lfs install
-> git clone https://github.com/kechifikasion/link-tree.git
+> git clone https://github.com/kechifikasion/link-tree-source.git
 > ```
 
 ---
