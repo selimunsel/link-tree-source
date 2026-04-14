@@ -56,7 +56,7 @@ No build tools or servers required — just open `index.html` in your browser.
 > **Note:** `bg-vid.mp4` is tracked via Git LFS. Make sure to install Git LFS before cloning:
 > ```bash
 > git lfs install
-> git clone https://github.com/kechifikasion/link-tree-source.git
+> git clone https://github.com/selimunsel/link-tree-source.git
 > ```
 
 ---
@@ -90,5 +90,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ☕ by <a href="https://github.com/kechifikasion">Kechifikasion</a>
+  Made with ☕ by <a href="https://github.com/selimunsel">Ahmet Selim ÜNSEL</a>
 </p>
