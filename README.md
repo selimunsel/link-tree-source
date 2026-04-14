@@ -39,6 +39,7 @@ link-tree/
 │   ├── bg-vid.mp4          # Looping background video (Git LFS)
 │   ├── video-poster.jpg    # Video fallback poster & OG image
 │   └── favicon/            # Full favicon set + web manifest
+├── LICENSE
 ├── .gitignore
 ├── .gitattributes          # LF normalization + Git LFS rules
 └── README.md
