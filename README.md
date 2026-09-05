@@ -1,7 +1,9 @@
 # 🔗 Link Tree — Terminal Dashboard Theme
 
 A dark, terminal/dashboard-styled link-in-bio page. Built as a fast, static single-page site — no frameworks, no build steps. Use this as a template: swap the placeholders for your own name, links and socials.
+
 🌐 **Live:** [tree.kechilab.io](https://kechilab.io)
+
 ---
 
 ## ✨ Features
