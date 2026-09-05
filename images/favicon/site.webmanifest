@@ -1,6 +1,6 @@
 {
-  "name": "Kechifikasion",
-  "short_name": "Kechifikasion",
+  "name": "Your Name",
+  "short_name": "YourName",
   "icons": [
     {
       "src": "android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#181818",
-  "background_color": "#181818",
+  "theme_color": "#0a0a0a",
+  "background_color": "#0a0a0a",
   "display": "standalone"
 }

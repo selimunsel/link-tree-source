@@ -1,17 +1,14 @@
-# 🔗 Kechifikasion Link Tree
+# 🔗 Link Tree — Terminal Dashboard Theme
 
-A modern, glassmorphism-styled link-in-bio page with a looping video background. Built as a fast, static single-page site — no frameworks, no build steps.
-
-🌐 **Live:** [tree.urbexhawks.com](https://tree.urbexhawks.com/)
+A dark, terminal/dashboard-styled link-in-bio page. Built as a fast, static single-page site — no frameworks, no build steps. Use this as a template: swap the placeholders for your own name, links and socials.
 
 ---
 
 ## ✨ Features
 
-- **Video Background** — Full-screen looping MP4 with blur & dimming overlay
-- **Glassmorphism UI** — Frosted-glass cards with `backdrop-filter` blur
+- **Dashboard UI** — Dark, terminal-inspired panel layout with a red accent
 - **Responsive Design** — Optimized for mobile, tablet, and desktop
-- **Social Links** — YouTube, Twitch, GitHub with branded hover effects
+- **Social Links** — YouTube, Kick, GitHub with branded hover effects (easy to add/remove)
 - **SEO & Open Graph** — Meta tags and social share preview configured
 - **PWA-Ready** — Includes web manifest and full favicon set
 
@@ -22,8 +19,8 @@ A modern, glassmorphism-styled link-in-bio page with a looping video background.
 | Layer | Technology |
 |-------|------------|
 | Markup | HTML5 (Semantic) |
-| Styling | Vanilla CSS3 (Flexbox, Media Queries, Glassmorphism) |
-| Typography | [Montserrat](https://fonts.google.com/specimen/Montserrat) via Google Fonts |
+| Styling | Vanilla CSS3 (Flexbox, Media Queries) |
+| Typography | System monospace (`Courier New`) + `Arial` |
 | Icons | [Font Awesome 6](https://fontawesome.com/) |
 
 ---
@@ -31,21 +28,17 @@ A modern, glassmorphism-styled link-in-bio page with a looping video background.
 ## 📁 Project Structure
 
 ```
-link-tree/
-├── index.html              # Main page
+link-tree-source/
+├── index.html              # Main page — edit the marked section for your content
 ├── css/
 │   └── styles.css          # All styles
 ├── images/
-│   ├── bg-vid.mp4          # Looping background video (Git LFS)
-│   ├── video-poster.jpg    # Video fallback poster & OG image
 │   └── favicon/            # Full favicon set + web manifest
 ├── LICENSE
 ├── .gitignore
-├── .gitattributes          # LF normalization + Git LFS rules
+├── .gitattributes
 └── README.md
 ```
-
-
 
 ---
 
@@ -53,11 +46,9 @@ link-tree/
 
 No build tools or servers required — just open `index.html` in your browser.
 
-> **Note:** `bg-vid.mp4` is tracked via Git LFS. Make sure to install Git LFS before cloning:
-> ```bash
-> git lfs install
-> git clone https://github.com/selimunsel/link-tree-source.git
-> ```
+```bash
+git clone https://github.com/selimunsel/link-tree-source.git
+```
 
 ---
 
@@ -73,13 +64,21 @@ This is a fully static site. You can deploy it anywhere:
 
 ## 🎨 Customization
 
-| What | Where |
-|------|-------|
-| Links & text | `index.html` — edit `<ul>` items inside `.link-container` |
-| Colors & effects | `css/styles.css` — hover colors, blur intensity, card opacity |
-| Background video | Replace `images/bg-vid.mp4` and `images/video-poster.jpg` |
-| Favicon | Replace files in `images/favicon/` and update `site.webmanifest` |
-| OG / SEO meta | `<head>` section in `index.html` |
+`index.html` has an `EDIT BELOW` comment marking the block to personalize. Replace every placeholder before deploying:
+
+| Placeholder | Where | Replace with |
+|---|---|---|
+| `YOUR NAME` | `<title>`, meta tags, `.brand`, `.ft` | Your display name |
+| `https://your-domain.com/` | `og:url`, `og:image`, `twitter:image`, canonical | Your live domain |
+| `PROJECT ONE` / `PROJECT TWO` + `https://your-link-1.com` / `-2.com` | `LINKS` panel | Your own project links |
+| `your@email.com` | `LINKS` panel | Your contact email |
+| `yourhandle` (YouTube / Kick / GitHub URLs) | `SOCIALS` panel | Your social handles |
+| `v1.0.0` | `.badge` | Your own version tag, or delete |
+| `Kechifikasion` name fields | `images/favicon/site.webmanifest` | Your app/site name |
+
+> **Note:** `og:image` / `twitter:image` currently point to `android-chrome-512x512.png` as a placeholder. For a proper social share preview, add a dedicated 1200×630 image (e.g. `images/og-image.jpg`) and update those two meta tags.
+
+Colors, spacing and hover effects live in `css/styles.css` (`:root` variables at the top control the palette).
 
 ---
 
